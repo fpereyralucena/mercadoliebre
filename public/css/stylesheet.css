@@ -16,9 +16,8 @@ body {
 }
 
 .search-input {
-    max-width: 45%;
+    max-width: 200px;
     height: 20px;
-    margin-left: 2%;
 }
 
 .logo {
@@ -33,7 +32,7 @@ body {
 }
 
 .firstrow input {
-    width: 99%;
+    width: 80%;
 }
 
 .fa-magnifying-glass {
@@ -42,7 +41,8 @@ body {
     flex-shrink: 1;
 }
 
-.menues {
+.menu-general,
+.menu-propio {
     display: none;
 }
 
@@ -70,40 +70,8 @@ main {
     background-color: #ebebeb;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:70%;
-    flex-shrink: 1;
-    justify-content: center;
-    margin: 3vh 10vw;
-    padding:1%;
-}
-
-form label {
-    font-weight: bold;
-    margin:10px 0;
-}
-
-form input {
-    margin:10px 0;
-    border-radius: 3px;
-    padding:3px;
-}
-
-form button {
-    margin: 10px 0;
-    padding: 4px;
-    color:#fff;
-    background-color: #1259c3;
-    border-radius: 4px;
-}
-
 .titulares {
-    margin: 1vh 10vw;
-    display:block;
-    min-width: 338px;
+    margin: 50px 0px 50px 50px;;
     font-size: 24px;
     color: #666;
     background-color: #ebebeb;
@@ -112,11 +80,14 @@ form button {
 .seccion-productos {
     background-color: #ebebeb;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* max-width:25vw; */
-    /* justify-content: space-evenly; */
-    margin-left: 1vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    min-width: 300px;
+    max-width: 99%;
+
 }
 
 article {
@@ -132,7 +103,7 @@ article:hover {
 }
 
 article img {
-    width: 80vw;
+    width: 300px;
     margin-bottom: 0px;
 }
 
@@ -163,122 +134,74 @@ article img {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    max-height: 10vh;
-    width:80vw;
-    min-height: 138px;
+    min-height: 17vh;
+    
 }
 
 .precio {
     display: inline;
     margin: 10px;
-    font-size: 18px;
+    font-size:18px;
 }
 
 .descuento {
     display: inline;
     margin: 10px;
     color: #39b54a;
-    font-size: 16px;
+    font-size:16px;
 }
 
 .titulo-producto {
     margin: 0px 60px 10px 0px;
     color: #666;
     font-size: 16px;
-    padding-left: 10px;
+    padding-left:10px;
 }
 
 footer i {
     font-size: 2em;
     margin-bottom: 10px;
-    display: blocK !important;
+    display:blocK !important;
     text-align: center;
-    color: #1259c3;
+    color:#1259c3;
 }
 
-footer section {
-    display: block;
+footer section{
+    display:block;
     text-align: center;
     background-color: #fff;
-    margin: 0;
-    color: #666;
-    padding: 30px 30%;
+    margin:0;
+    color:#666;
+    padding:30px 30%;
 }
 
-footer {
+footer{
     background-color: #fff;
 }
 
 /*tablet*/
 @media (min-width: 361px) {
-    .logo {
-        width: 30%;
-    }
-    
-    .combo-buscador {
-        display: flex;
-        width: 30%;
-    }
-    .burger-menu{
-        display:none;
-    }
-
-    .menues ul{
-        display:flex !important;
+    .seccion-productos {
         flex-direction: row;
-        margin: 0 10%;
-        justify-content: space-between;
-        list-style: none;
-        margin-bottom: 10px;
     }
-
-    .menues ul li a{
-        color: #000 !important;
-        text-decoration: none !important;
-        list-style: none;      
+    .producto{
+        width:40vw;
     }
-
-    main {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    main .seccion-productos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* width: 100%; */
-        margin-left:10vw;
-    }
-
-    .producto {
-        width: 35vw;
-        /* display: flex; */
-        /* flex-direction: column; */
-    }
-
-    .producto img {
-        width: 25vw;
-    }
-    .product-desc-box {
-        height: 10vh;
-        width: 25vw;
+    .producto img{
+        width:40vw;
     }
 }
 
 /*desktop*/
 @media (min-width: 769px) {
-
-    .producto {
-        width: 15vw;
-   }
-
-    .producto img {
-        width: 16vw;
+    .producto{
+        width:20vw;
+    }
+    .producto img{
+        width:20vw;
     }
 
-    .product-desc-box {
-        height: 20vh;
-        min-height: 140px;
-        width: 16vw;
+    .product-desc-box{
+        min-height: 20vh;
     }
 }
