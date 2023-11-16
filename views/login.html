@@ -52,54 +52,15 @@
     </header>
 
     <main>
-        <form action="index.html" method="post" enctype="multipart/form-data">
+        <form  class="login" action="login.html" method="post" enctype="multipart/form-data">
 
             
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
-            <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" requiered>
-            <input type="email" id="email" placeholder="E-mail" name="email" required>
-
-            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento"   required>
-
-
-            <input type="text" id="domicilio" name="domicilio" placeholder="Domilicio" required>
-
-            <label for="perfil">Perfil del usuario:</label>
-            <select id="perfil" name="perfil" required>
-                <option value="comprar">Comprar</option>
-                <option value="vender">Vender</option>
-            </select>
-
-            <label for="categorias">Categorías de interés:</label>
-        <div>
-            <input type="checkbox" id="electro" name="categorias[]" value="electro">
-            <label for="electro">Electro</label>
-
-            <input type="checkbox" id="moda" name="categorias[]" value="moda">
-            <label for="moda">Moda</label>
-
-            <input type="checkbox" id="hogar" name="categorias[]" value="hogar">
-            <label for="hogar">Hogar</label>
-
-            <input type="checkbox" id="jugueteria" name="categorias[]" value="jugueteria">
-            <label for="jugueteria">Juguetería</label>
-
-            <input type="checkbox" id="vidaSana" name="categorias[]" value="vidaSana">
-            <label for="vidaSana">Vida Sana</label>
-        </div>
-
-            <label for="foto">Foto de usuario:</label>
-            <input type="file" id="foto" name="foto" accept="image/*" required>
-
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-
-            <label for="confirmarContrasena">Confirmar Contraseña:</label>
-            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+            <input type="text" id="usuario" name="usuario" placeholder="usuario" required>
+            
+            <input type="password" id="constrasena" name="contrasena" placeholder="constraseña" required>
 
             <button type="submit">Enviar</button>
-            <button type="reset">Borrar datos</button>
+            
 
         </form>
 
