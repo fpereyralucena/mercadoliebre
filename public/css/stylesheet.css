@@ -16,9 +16,9 @@ body {
 }
 
 .search-input {
-    max-width: 40%;
+    max-width: 45%;
     height: 20px;
-    margin-left:5%;
+    margin-left: 2%;
 }
 
 .logo {
@@ -33,7 +33,7 @@ body {
 }
 
 .firstrow input {
-    width: 80%;
+    width: 99%;
 }
 
 .fa-magnifying-glass {
@@ -70,12 +70,43 @@ main {
     background-color: #ebebeb;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:70%;
+    flex-shrink: 1;
+    justify-content: center;
+    margin: 3vh 10vw;
+    padding:1%;
+}
+
+form label {
+    font-weight: bold;
+    margin:10px 0;
+}
+
+form input {
+    margin:10px 0;
+    border-radius: 3px;
+    padding:3px;
+}
+
+form button {
+    margin: 10px 0;
+    padding: 4px;
+    color:#fff;
+    background-color: #1259c3;
+    border-radius: 4px;
+}
+
 .titulares {
-    margin: 50px 0px 50px 50px;
+    margin: 1vh 10vw;
     display:block;
-    min-width: 99%;
+    min-width: 338px;
     font-size: 24px;
-    color: #666
+    color: #666;
+    background-color: #ebebeb;
 }
 
 .seccion-productos {
@@ -132,6 +163,7 @@ article img {
     flex-wrap: wrap;
     max-height: 10vh;
     width:80vw;
+    min-height: 138px;
 
 }
 
@@ -207,7 +239,7 @@ footer {
         
     }
  
-
+   
     .seccion-productos {
         flex-direction: row;
         margin:20px;
@@ -229,18 +261,19 @@ footer {
 /*desktop*/
 @media (min-width: 769px) {
 
-  
+
     .producto {
         width: 15vw;
         
     }
 
     .producto img {
-        width: 15vw;
+        width: 16vw;
     }
 
     .product-desc-box {
-        height: 9vh;
-        width: 15vw;
+        height: 20vh;
+        min-height: 140px;
+        width: 16vw;
     }
 }
