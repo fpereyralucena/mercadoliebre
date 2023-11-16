@@ -16,8 +16,9 @@ body {
 }
 
 .search-input {
-    max-width: 200px;
+    max-width: 45%;
     height: 20px;
+    margin-left: 2%;
 }
 
 .logo {
@@ -32,7 +33,7 @@ body {
 }
 
 .firstrow input {
-    width: 80%;
+    width: 99%;
 }
 
 .fa-magnifying-glass {
@@ -41,8 +42,7 @@ body {
     flex-shrink: 1;
 }
 
-.menu-general,
-.menu-propio {
+.menues {
     display: none;
 }
 
@@ -70,27 +70,61 @@ main {
     background-color: #ebebeb;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:70%;
+    flex-shrink: 1;
+    justify-content: center;
+    margin: 3vh 10vw;
+    padding:1%;
+}
+
+form label {
+    font-weight: bold;
+    margin:10px 0;
+}
+
+form input {
+    margin:10px 0;
+    border-radius: 3px;
+    padding:3px;
+}
+
+form button {
+    margin: 10px 0;
+    padding: 4px;
+    color:#fff;
+    background-color: #1259c3;
+    border-radius: 4px;
+}
+
 .titulares {
-    margin: 50px 0px 50px 50px;;
+    margin: 1vh 10vw;
+    display:block;
+    min-width: 338px;
     font-size: 24px;
-    color: #666
+    color: #666;
+    background-color: #ebebeb;
 }
 
 .seccion-productos {
     background-color: #ebebeb;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-left: 2%;
-    min-width: 300px;
-    max-width: 99%;
-
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* max-width:25vw; */
+    /* justify-content: space-evenly; */
+    margin-left: 1vw;
 }
 
 article {
     margin: 10px;
+}
+
+article.product {
+    max-width: 80vw;
 }
 
 article:hover {
@@ -98,7 +132,7 @@ article:hover {
 }
 
 article img {
-    width: 300px;
+    width: 80vw;
     margin-bottom: 0px;
 }
 
@@ -121,6 +155,7 @@ article img {
     border-radius: 50%;
     border-color: #39b54a;
     color: #39b54a
+    
 }
 
 .product-desc-box {
@@ -128,74 +163,122 @@ article img {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    min-height: 17vh;
-    
+    max-height: 10vh;
+    width:80vw;
+    min-height: 138px;
 }
 
 .precio {
     display: inline;
     margin: 10px;
-    font-size:18px;
+    font-size: 18px;
 }
 
 .descuento {
     display: inline;
     margin: 10px;
     color: #39b54a;
-    font-size:16px;
+    font-size: 16px;
 }
 
-.titulo-producto{
-    margin: 30px 60px 10px 0px;
+.titulo-producto {
+    margin: 0px 60px 10px 0px;
     color: #666;
     font-size: 16px;
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 footer i {
     font-size: 2em;
     margin-bottom: 10px;
-    display:blocK !important;
+    display: blocK !important;
     text-align: center;
-    color:#1259c3;
+    color: #1259c3;
 }
 
-footer section{
-    display:block;
+footer section {
+    display: block;
     text-align: center;
     background-color: #fff;
-    margin:0;
-    color:#666;
-    padding:30px 30%;
+    margin: 0;
+    color: #666;
+    padding: 30px 30%;
 }
 
-footer{
+footer {
     background-color: #fff;
 }
 
 /*tablet*/
 @media (min-width: 361px) {
-    .seccion-productos {
+    .logo {
+        width: 30%;
+    }
+    
+    .combo-buscador {
+        display: flex;
+        width: 30%;
+    }
+    .burger-menu{
+        display:none;
+    }
+
+    .menues ul{
+        display:flex !important;
         flex-direction: row;
+        margin: 0 10%;
+        justify-content: space-between;
+        list-style: none;
+        margin-bottom: 10px;
     }
-    .producto{
-        width:40vw;
+
+    .menues ul li a{
+        color: #000 !important;
+        text-decoration: none !important;
+        list-style: none;      
     }
-    .producto img{
-        width:40vw;
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    main .seccion-productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 100%; */
+        margin-left:10vw;
+    }
+
+    .producto {
+        width: 35vw;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .producto img {
+        width: 25vw;
+    }
+    .product-desc-box {
+        height: 10vh;
+        width: 25vw;
     }
 }
 
 /*desktop*/
 @media (min-width: 769px) {
-    .producto{
-        width:20vw;
-    }
-    .producto img{
-        width:20vw;
+
+    .producto {
+        width: 15vw;
+   }
+
+    .producto img {
+        width: 16vw;
     }
 
-    .product-desc-box{
-        min-height: 20vh;
+    .product-desc-box {
+        height: 20vh;
+        min-height: 140px;
+        width: 16vw;
     }
 }
