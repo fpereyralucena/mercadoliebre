@@ -55,12 +55,15 @@
         <form action="index.html" method="post" enctype="multipart/form-data">
 
             
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
-            <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" requiered>
-            <input type="email" id="email" placeholder="E-mail" name="email" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" required>
+            
+            <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" maxlength="20">
+            
+            <input type="email" id="email" placeholder="E-mail" name="email" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" required>
+           
 
             <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento"   required>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"  required>
 
 
             <input type="text" id="domicilio" name="domicilio" placeholder="Domilicio" required>
@@ -93,13 +96,13 @@
             <input type="file" id="foto" name="foto" accept="image/*" required>
 
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="password" id="contrasena" name="contrasena" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Debe contener al menos un número, una mayúscula, una minúscula y 8 caracteres" required>
 
             <label for="confirmarContrasena">Confirmar Contraseña:</label>
-            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Debe contener al menos un número, una mayúscula, una minúscula y 8 caracteres">
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar datos</button>
+            <button class="submit" type="submit">Enviar</button>
+            <button class="submit" type="reset">Borrar datos</button>
 
         </form>
 

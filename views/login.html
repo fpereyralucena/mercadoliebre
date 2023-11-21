@@ -55,11 +55,11 @@
         <form  class="login" action="login.html" method="post" enctype="multipart/form-data">
 
             
-            <input type="text" id="usuario" name="usuario" placeholder="usuario" required>
+            <input type="text" id="usuario" name="usuario" placeholder="usuario" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" maxlength="20" requiered>
             
-            <input type="password" id="constrasena" name="contrasena" placeholder="constraseña" required>
+            <input type="password" id="constrasena" name="contrasena" placeholder="constraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
 
-            <button type="submit">Enviar</button>
+            <button class="submit" type="submit">Enviar</button>
             
 
         </form>

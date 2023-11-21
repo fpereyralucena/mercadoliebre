@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+
 .firstrow {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +18,7 @@ body {
 
 .search-input {
     max-width: 200px;
-    height: 20px;
+    height: 25px;
 }
 
 .logo {
@@ -25,11 +26,14 @@ body {
 
 }
 
-.combo-buscador {
-    display: flex;
-    width: 50%;
-    align-items: flex-end;
+nav {
+    margin: 1vh 2vw;
 }
+
+.combo-buscador{
+    text-align: center;
+}
+
 
 .firstrow input {
     width: 80%;
@@ -38,7 +42,8 @@ body {
 .fa-magnifying-glass {
     background-color: #ebebeb;
     height: 20px;
-    flex-shrink: 1;
+    padding:2px;
+    
 }
 
 .menues {
@@ -61,13 +66,21 @@ body {
 }
 
 .banner {
-    margin: 0px;
-    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    width:99vw;
+}
+
+.banner img {
+    width: 99vw;
 }
 
 main {
     background-color: #ebebeb;
+    margin:0 auto;
 }
+
 
 .titulares {
     margin: 50px 0px 50px 50px;;
@@ -83,9 +96,9 @@ main {
     padding: 1vh 10%;
     justify-content: center;
     align-items: center;
-    
+    margin: 0 auto;
 }
-.login button {
+.login button .submit {
     margin:1vh 1vw;
     background-color: #1259c3;
     color:#FFF;
@@ -183,7 +196,14 @@ form {
     display:flex;
     flex-direction: column;
     padding:2% 10%;
-    margin: 1% 5%;
+    margin: 0 auto;
+}
+
+form.combo-buscador{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 
 form input, form label, form button {
@@ -193,11 +213,12 @@ form input, form label, form button {
 
 
 
-form button {
+form button .submit{
     border-radius: 4px;
     background-color: #1259c3;
     color:#FFF;
     padding: 3px;
+    width:30vw;
 }
 footer i {
     font-size: 2em;
@@ -218,6 +239,7 @@ footer section{
 
 footer{
     background-color: #fff;
+    margin: 0 7vw;
 }
 
 /*tablet*/
@@ -230,7 +252,7 @@ footer{
         color:#000;
         text-decoration: none;
         list-style: none;
-        margin:auto;
+        margin:50px;
     }
 
     ul {
