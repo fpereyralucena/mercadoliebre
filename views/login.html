@@ -14,15 +14,16 @@
 </head>
 
 <body>
-    <header class="login">
+    <header class="home">
         <div class="firstrow">
             <a href="/"><img class="logo" src=".\img\logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
-            <div class="combo-buscador"><input type="search" class="search-input"
+            <form class="combo-buscador"><input type="search" class="search-input"
                     label="Ingresá lo que quieras encontrar" placeholder="Buscar productos, marcas y más…"
                     maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
                     value="" role="combobox">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            
 
             <p class="compra-en-cuotas"> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta
                 de crédito</p>
@@ -36,9 +37,9 @@
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
-                    <li><a href="/register">Creá tu cuenta </a> <i class="fa-solid fa-id-card"></i></li>
-                    <li><a href="/login">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
-                    <li><a href="#">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i> </a> </li>
+                    <li><a href="/login">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
 
                 </ul>
             </div>
@@ -47,8 +48,8 @@
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
-
-        <img class="banner" src=".\img\img-home-banner.jpg" alt="banner home">
+        
+        
     </header>
 
     <main class="login">
@@ -59,7 +60,7 @@
             
             <input type="password" id="constrasena"  autocomplete="current-password" name="contrasena" placeholder="constraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
 
-            <button class="submit" type="submit">Enviar</button>
+            <a href="/"><button class="submit" type="button" >Enviar</button></a>
             
 
         </form>
@@ -90,9 +91,10 @@
                 porque estás siempre protegid@.</p>
         </section>
 
-        <section>Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
-
+        
     </footer>
+    <section class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
+
 </body>
 
 </html>

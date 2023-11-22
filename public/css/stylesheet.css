@@ -1,21 +1,23 @@
 body {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    
+font-family: 'Roboto', sans-serif;
+    
+font-size: 12px;
+    
+margin: 0;
 }
+
+body {}
 
 * {
     box-sizing: border-box;
 }
 
 header.home{
-    position:fixed;
-    z-index:5;
-    top:0;
     background-color: #EAC926;
-    /* margin-top:55px; */
     width:100vw;
-    height: max-content;
+    /* height: 25vh; */
+    display: inline-grid;
 }
 
 
@@ -23,13 +25,14 @@ header.register, header.login {
     display:block;
     margin:1px;
     padding:1px;
+    background-color: #EAC926;
 }
 .firstrow {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin: 1vh 1vw;
 }
 
 .search-input {
@@ -81,9 +84,16 @@ nav {
 }
 
 .banner {
-    display: flex;
-    text-align: center;
-    width:99vw;
+    /* display: block; */
+    /* text-align: center; */
+    /* width:99vw; */
+    /* background-color: #EAC926; */
+}
+
+img {
+    overflow: hidden;
+    /* overflow-clip-margin: content-box; */
+    display: block;
 }
 
 .banner img {
@@ -93,9 +103,7 @@ nav {
 main {
     background-color: #ebebeb;
 }
-main.home {
-    margin-top:205px;
-}
+
 
 main.register , main.login{
     padding:1vh 15vw;
@@ -104,11 +112,12 @@ main.register , main.login{
 main
 
 .titulares {
-    margin: 50px 0px 50px 50px;
+    margin: 1vh 2vw;
     font-size: 24px;
     color: #666;
     background-color: #ebebeb;
     display: block;
+    overflow: visible;
 }
 
 .login {
@@ -140,10 +149,9 @@ main
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    /* justify-content: space-evenly; */
-    /* margin-left: 2%; */
-    min-width: 300px;
-    /* max-width: 99%; */
+    justify-content: center;
+    /* min-width: 300px; */
+    /* align-items: center; */
 }
 
 article.producto {
@@ -293,8 +301,9 @@ footer section{
 
 footer{
     background-color: #fff;
-    /* margin: 0 7vw; */
+    margin: 0 7vw;
 }
+
 
 /*tablet*/
 @media (min-width: 361px) {
@@ -328,10 +337,7 @@ footer{
         width:30%
     }
 
-    .combo-buscador{
-        width:30%
     
-    }
 
     .compra-en-cuotas{
         width:30%;
@@ -350,6 +356,9 @@ footer{
         width:40vw;
     }
     
+    .Copyright {
+        margin:0 10px;
+    }
   
 }
 
@@ -370,10 +379,14 @@ footer{
         opacity:0.01;
     }
 
+    article.producto:hover .titulo-producto {
+        opacity:1;
+    }
+
     footer {
         display:flex;
         flex-direction: row;
-        align-content: center;
+        justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
     }
