@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="login">
         <div class="firstrow">
-            <img class="logo" src=".\img\logo-mercado-liebre.svg" alt="logo mercado liebre">
+            <a href="/"><img class="logo" src=".\img\logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
             <div class="combo-buscador"><input type="search" class="search-input"
                     label="Ingresá lo que quieras encontrar" placeholder="Buscar productos, marcas y más…"
                     maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
-            <p class="compra-en-cuotas"> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sub tarjeta
+            <p class="compra-en-cuotas"> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta
                 de crédito</p>
         </div>
 
@@ -51,13 +51,13 @@
         <img class="banner" src=".\img\img-home-banner.jpg" alt="banner home">
     </header>
 
-    <main>
+    <main class="login">
         <form  class="login" action="login.html" method="post" enctype="multipart/form-data">
 
             
-            <input type="text" id="usuario" name="usuario" placeholder="usuario" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" maxlength="20" requiered>
+            <input type="text" id="usuario" name="usuario" autocomplete="username" placeholder="usuario" pattern="/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/" maxlength="20" requiered>
             
-            <input type="password" id="constrasena" name="contrasena" placeholder="constraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+            <input type="password" id="constrasena"  autocomplete="current-password" name="contrasena" placeholder="constraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
 
             <button class="submit" type="submit">Enviar</button>
             
@@ -66,7 +66,7 @@
 
     </main>
 
-    <footer>
+    <footer class="login">
         <section>
             <i class="fa-solid fa-credit-card"></i>
             <b>Pagá con tarjeta o en efectivo</b>
