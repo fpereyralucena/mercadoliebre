@@ -1,7 +1,15 @@
 body {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    
+font-family: 'Roboto', sans-serif;
+    
+font-size: 12px;
+    
+width: 100vw;
+}
+
+nav.nav-home{
+    margin-left: 40%;
+
 }
 
 * {
@@ -9,13 +17,13 @@ body {
 }
 
 header.home{
-    position:fixed;
-    z-index:5;
-    top:0;
     background-color: #EAC926;
-    /* margin-top:55px; */
-    width:100vw;
-    height: max-content;
+    border: 1px solid #EAC926;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0;
+    z-index: 5;
 }
 
 
@@ -23,13 +31,14 @@ header.register, header.login {
     display:block;
     margin:1px;
     padding:1px;
+    background-color: #EAC926;
 }
 .firstrow {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin: 1vh 1vw;
 }
 
 .search-input {
@@ -39,11 +48,23 @@ header.register, header.login {
 
 a .logo {
     width: 50%;
+    animation-name:rebote;
+    animation-duration:1.5s;
+    animation-iteration-count:2;
+    animation-timing-function:linear;
+    animation-delay:0.1s;
+
 }
 
-nav {
-    margin: 1vh 2vw;
+@keyframes rebote {
+    0% {width: 50%}
+    30% {width: 60%;}
+    70% {width: 40%;}
+    100% {width: 50%;}
 }
+
+
+
 
 .combo-buscador{
     text-align: center;
@@ -65,6 +86,23 @@ nav {
     display: none;
 }
 
+.izq {
+    float:left;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+.der {
+    float: right;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
 
 .burger-menu {
     background-color: #03264c;
@@ -77,13 +115,15 @@ nav {
     text-align: center;
     margin: 20px;
     border-radius: 7px;
-    margin-left: 45%
+   
 }
 
-.banner {
-    display: flex;
-    text-align: center;
-    width:99vw;
+
+
+img {
+    overflow: hidden;
+    /* overflow-clip-margin: content-box; */
+    display: block;
 }
 
 .banner img {
@@ -92,10 +132,9 @@ nav {
 
 main {
     background-color: #ebebeb;
+    margin-top:210px;
 }
-main.home {
-    margin-top:205px;
-}
+
 
 main.register , main.login{
     padding:1vh 15vw;
@@ -104,11 +143,12 @@ main.register , main.login{
 main
 
 .titulares {
-    margin: 50px 0px 50px 50px;
+    margin: 1vh 2vw;
     font-size: 24px;
     color: #666;
     background-color: #ebebeb;
     display: block;
+    overflow: visible;
 }
 
 .login {
@@ -140,10 +180,9 @@ main
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    /* justify-content: space-evenly; */
-    /* margin-left: 2%; */
-    min-width: 300px;
-    /* max-width: 99%; */
+    justify-content: center;
+    /* min-width: 300px; */
+    /* align-items: center; */
 }
 
 article.producto {
@@ -293,45 +332,61 @@ footer section{
 
 footer{
     background-color: #fff;
-    /* margin: 0 7vw; */
+    margin: 0 7vw;
 }
+
 
 /*tablet*/
 @media (min-width: 361px) {
-    .menues{
-        display:block;
+    header.home {
+        /* position:absolute; */
+        /* display:flex; */
     }
+
+    .menues {
+        display:flex;
+        position:relative;
+    }
+
+
+    .der {
+        display:inline;
+        position:absolute;
+        left:0;
+        top:0;
+        margin:0;
+        background-color: #EAC926;
+    }
+   .izq{
+    position:absolute;
+    right:0;
+    top:0;
+    display:inline;
+    margin:0;
+    background-color:#EAC926;
+
+   }
+
 
     .menues ul li a{
         color:#000;
         text-decoration: none;
         list-style: none;
         margin:50px;
-    }
-
-    ul {
-        display:flex;
-        justify-content: space-between;
-        margin:2px;
-        padding:2px;
-        flex-wrap: wrap;
+        display: inline;
     }
 
 
     li {
         list-style: none;
-        margin:2px 10px;
-
+        /
     }
     
     .logo{
         width:30%
     }
 
-    .combo-buscador{
-        width:30%
     
-    }
 
     .compra-en-cuotas{
         width:30%;
@@ -339,6 +394,10 @@ footer{
 
     .burger-menu{
         display:none
+    }
+
+    main.home{
+        margin:0;
     }
     .seccion-productos {
         flex-direction: row;
@@ -350,6 +409,10 @@ footer{
         width:40vw;
     }
     
+    .Copyright {
+        margin:0 10px;
+        color:#666;
+    }
   
 }
 
@@ -370,10 +433,14 @@ footer{
         opacity:0.01;
     }
 
+    article.producto:hover .titulo-producto {
+        opacity:1;
+    }
+
     footer {
         display:flex;
         flex-direction: row;
-        align-content: center;
+        justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
     }

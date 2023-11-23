@@ -18,9 +18,10 @@
         <div class="firstrow">
             <a href="/"><img class="logo" src=".\img\logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
             <form class="combo-buscador"><input type="search" class="search-input"
-                    label="Ingresá lo que quieras encontrar" placeholder="Buscar productos, marcas y más…"
+                    label="Ingresá lo que quieras encontrar" placeholder="Buscar productos, marcas y más ..."
                     maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
-                    value="" role="combobox">
+                    value="" role="combobox" >
+                    
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             
@@ -30,16 +31,20 @@
         </div>
 
 
-        <nav>
+        <nav class="nav-home">
             <div class="menues">
-                <ul>
+                <ul class="izq">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
-                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i> </a> </li>
-                    <li><a href="/login">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i> </a></li>
+                    
+
+                </ul>
+                <ul class="der">
+                    <div><li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li></div>
+                    <div><li><a href="/login">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a></li></div>
+                    <div><li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li></div>
 
                 </ul>
             </div>
@@ -56,6 +61,52 @@
             <img  src=".\img\img-home-banner.jpg" alt="banner home">
         </div>
         <b class="titulares">Basado en tu última visita</b>
+        <section class="seccion-productos">
+            
+            <article class="producto">
+                <img src=".\img\img-cafetera-moulinex.jpg" alt="cafetera moulinex">
+                <div class="product-desc-box">
+                    <i class="fa-solid fa-truck product-delivery-icon"></i>
+                    <p class="precio">$6.770</p>
+                    <p class="descuento">40% OFF</p>
+                    <strong class="titulo-producto">Cafetera Moulinex</strong>
+                </div>
+
+            </article>
+            <article class="producto">
+                <img src=".\img\img-macbook-pro-2019.jpg" alt="MacBoox Pro 2019">
+                <div class="product-desc-box">
+                    <i class="fa-solid fa-truck product-delivery-icon"></i>
+                    <p class="precio">$230.000</p>
+                    <p class="descuento">20% off</p>
+                    <strong class="titulo-producto">MacBook Pro 2019 </strong>
+                </div>
+            </article>
+            <article class="producto">
+                <img src=".\img\img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+
+                <div class="product-desc-box">
+                    <i class="fa-solid fa-truck product-delivery-icon"></i>
+                    <p class="precio">$70.500</p>
+                    <p class="descuento">10% off</p>
+                    <strong class="titulo-producto">Samsung Galaxy S10</strong>
+                </div>
+
+            </article>
+            <article class="producto"">
+                <img src=" .\img\img-tv-samsung-smart.jpg" alt="SmartTv Samung 43">
+
+                <div class="product-desc-box""><i class=" fa-solid fa-truck product-delivery-icon"></i>
+                    <p class="precio">$23.200</p>
+                    <p class="descuento">5% off</p>
+                    <strong class="titulo-producto"> SmartTv Samsung 43"</strong>
+                </div>
+
+
+            </article>
+
+        </section>
+        <b class="titulares">Ofertas</b>
         <section class="seccion-productos">
             
             <article class="producto">
@@ -128,9 +179,10 @@
                 porque estás siempre protegid@.</p>
         </section>
 
-        <section>Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
+        
 
     </footer>
+    <section class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
 </body>
 
 </html>
