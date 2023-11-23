@@ -7,7 +7,7 @@ font-size: 12px;
 margin: 0;
 }
 
-body {}
+
 
 * {
     box-sizing: border-box;
@@ -113,12 +113,7 @@ a .logo {
     margin-left: 45%
 }
 
-.banner {
-    /* display: block; */
-    /* text-align: center; */
-    /* width:99vw; */
-    /* background-color: #EAC926; */
-}
+
 
 img {
     overflow: hidden;
