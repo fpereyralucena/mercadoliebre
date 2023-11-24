@@ -17,52 +17,60 @@
     <header class="home">
         <div class="firstrow">
             <a href="/"><img class="logo" src=".\img\logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
-            <form class="combo-buscador"><input type="search" class="search-input"
+            <form class="combo-buscador" id="combo-buscador" name="combo-buscador"><input name="search" id="search-input" aria-expanded="true" aria-controls="true" type="search" class="search-input"
                     label="Ingresá lo que quieras encontrar" placeholder="Buscar productos, marcas y más ..."
-                    maxlength="120" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
-                    value="" role="combobox" >
-                    
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    maxlength="120"  autocorrect="off" spellcheck="false" autocomplete="off"
+                    value="" role="combobox">
+
+                <button type="submit" title="search"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            
+
 
             <p class="compra-en-cuotas"> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta
                 de crédito</p>
         </div>
 
+        <div class="second-row">
+            <nav class="nav-home">
+                <div class="menues">
+                    <ul class="izq">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
 
-        <nav class="nav-home">
-            <div class="menues">
-                <ul class="izq">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                    
 
-                </ul>
-                <ul class="der">
-                    <div><li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li></div>
-                    <div><li><a href="/login">Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a></li></div>
-                    <div><li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li></div>
+                    </ul>
+                    <ul class="der">
+                        
+                            <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                        
+                        
+                            <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                       
+                        
+                            <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                        
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
+        </div>
 
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
         </nav>
-        
-        
+
+
     </header>
     <main class="home">
         <div class="banner">
-            <img  src=".\img\img-home-banner.jpg" alt="banner home">
+            <img src=".\img\img-home-banner.jpg" alt="banner home">
         </div>
         <b class="titulares">Basado en tu última visita</b>
         <section class="seccion-productos">
-            
+
             <article class="producto">
                 <img src=".\img\img-cafetera-moulinex.jpg" alt="cafetera moulinex">
                 <div class="product-desc-box">
@@ -108,7 +116,7 @@
         </section>
         <b class="titulares">Ofertas</b>
         <section class="seccion-productos">
-            
+
             <article class="producto">
                 <img src=".\img\img-cafetera-moulinex.jpg" alt="cafetera moulinex">
                 <div class="product-desc-box">
@@ -179,7 +187,7 @@
                 porque estás siempre protegid@.</p>
         </section>
 
-        
+
 
     </footer>
     <section class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
