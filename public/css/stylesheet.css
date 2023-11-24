@@ -15,7 +15,7 @@ body {
 
 header.home {
     background-color: #EAC926;
-    width: 100vw;
+    width: 100%;
     /* height: 25vh; */
     display: flex;
     flex-direction: column;
@@ -31,11 +31,17 @@ header.home {
 
 header.register,
 header.login {
-    display: block;
-    margin: 1px;
-    padding: 1px;
     background-color: #EAC926;
-    background-color: #EAC926;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .firstrow {
@@ -48,7 +54,8 @@ header.login {
 
 .search-input {
     max-width: 200px;
-    height: 25px;
+    height: 28px;
+    border: 0;
 }
 
 a .logo {
@@ -112,15 +119,8 @@ a .logo {
     flex-direction: row;
 }
 
-.second-row {}
 
-.izq {
-    /* left: 0; */
-    /* position: absolute; */
-    /* display: inline; */
-    /* margin: 0; */
-    /* z-index: 1; */
-}
+
 
 .der {
     right: 0;
@@ -130,10 +130,6 @@ a .logo {
     float: right;
     margin-left: 20vw;
 }
-
-ul.der {}
-
-ul.der {}
 
 
 
@@ -171,11 +167,21 @@ main.home {
     margin-top: 232px;
 }
 
-main.register,
+
 main.login {
     padding: 1vh 15vw;
+    text-align: left;
+    margin: 390px 1vw 0 2vw;
+    width: 100%;
+    overflow: auto;
 }
-
+main.register {
+    padding: 1vh 15vw;
+   
+    text-align: left;
+    margin: 250px 1vw 0 2vw;
+    width: 100%;
+}
 main .titulares {
     margin: 1vh 2vw;
     font-size: 24px;
@@ -187,13 +193,13 @@ main .titulares {
 }
 
 .login {
-    display: block;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* padding: 1vh 10%; */
+    padding: 1vh 10%;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .login button .submit {
@@ -206,9 +212,10 @@ main .titulares {
 }
 
 .login input {
-    margin: 0.5vh 1vw;
-    border-radius: 2px;
-
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .seccion-productos {
@@ -318,7 +325,9 @@ form.combo-buscador {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: center;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 form input,
@@ -330,13 +339,25 @@ form button {
 
 }
 
-form button {
+main form button{
     background-color: #1259c3;
-    color: #FFF;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px ;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+form button {
+    background-color: #fff;
+    color: #000;
+    border: 0;
 }
 
 form button .fa-magnifying-glass {
-    color: #fff;
+    color: #000;
     background-color: rgba(100, 100, 100, 0)
 }
 
@@ -345,7 +366,7 @@ form button.submit {
     background-color: #1259c3;
     color: #FFF;
     padding: 3px;
-    width: 30vw;
+    width: 184px;
 }
 
 form button.submit:hover {
@@ -396,6 +417,10 @@ footer {
         /* flex-direction: row; */
         /* justify-content: space-between; */
         /* align-items: flex-end; */
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 9vw; */
+        /* width: 99vw; */
     }
 
 
@@ -425,6 +450,7 @@ footer {
     li {
         list-style: none;
         display: inline-block;
+        /* margin: 0 2vw; */
     }
 
     .logo {
@@ -443,6 +469,12 @@ footer {
 
     main.home {
         margin-top: 0;
+    }
+
+    main.register{
+        margin: 0;
+        max-width: 100vw;
+        padding:1vh 25vw;
     }
 
     .seccion-productos {
@@ -495,6 +527,10 @@ footer {
 
     footer section {
         padding: 10px;
+    }
+
+    li{
+        margin: 0 2vw;
     }
 
 
