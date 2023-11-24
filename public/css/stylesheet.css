@@ -178,9 +178,8 @@ main.login {
 }
 main.register {
     padding: 1vh 15vw;
-   
     text-align: left;
-    margin: 250px 1vw 0 2vw;
+    margin: 250px 20vw 0 20vw;
     width: 100%;
 }
 main .titulares {
@@ -470,6 +469,12 @@ footer {
 
     main.home {
         margin-top: 0;
+    }
+    main.login {
+        margin:0;
+    }
+    header.login {
+        position:relative;
     }
 
     main.register{
